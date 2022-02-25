@@ -56,7 +56,7 @@ class UsersController extends Controller
    
     // public function update(UpdateUserRequest $request, User $user)
     // {
-    //     $data = $request->only(['name', 'level','gender','role','password']);
+    //     $data = $request->only(['name', 'level','gender','role','email']);
        
        
     //     //update attribute

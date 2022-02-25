@@ -29,7 +29,7 @@ Route::get('/preview', [PreviewController::class, 'preview'])->name('preview');
 Route::get('/preview/{category}', [PreviewController::class, 'category'])->name('preview.category');
 
 
-// Route::post('/vote', 'Vote\CastVoteController@vote')->name('castVote.vote');
+ //Route::get('/vote/{vote}', 'Vote\CastVoteController@vote')->name('castVote.store');
 // Route::get('/unvote/{id}', 'Vote\CastVoteController@unvote')->name('castVote.unvote');
 
 

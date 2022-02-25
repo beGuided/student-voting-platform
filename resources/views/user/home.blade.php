@@ -15,7 +15,7 @@
                         </div>
                     @endif
 
-                    <p class="text-center"><b> {{ Auth::user()->name }}</b> are logged in!</p>
+                    <p class="text-center"><b> {{ Auth::user()->name }}</b> you are logged in!</p>
 
                     <section style="background-color: rgb(6, 110, 40)">
 

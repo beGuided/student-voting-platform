@@ -73,19 +73,22 @@
             </div>
 
         @endif
-
-       
-
         </div>
        
        <!-- cast your vote -->
     <div class="space"></div>
+
+    @if($candidates->count() > 0)
+    
     <section>
         <div class="container">
-            <div class="row">
+
+            @include('partials.errors')
 
             <form action="{{route('castVote.store')}}" method="POST">  
+                @csrf
 
+            <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="container">
                         <div class="voting-box">
@@ -108,18 +111,12 @@
                                 </div>
 
                             </div>
-                            @else
                             @endif
                             @endforeach
                             <!-- Candidate Selection code -->
                             <h6>Select Your <b>Candidate</b></h6>
-
-                            @include('partials.errors')
-
-                           @csrf
-                              
                             <div class="candidate-select-box">
-                                 <select  name="presi" class="candidate_select form-control" > 
+                                 <select  name="candidate_id[0]" class="candidate_select form-control" > 
                                    
                                     <option value="">Select Candidate</option> 
                                     @foreach ($candidates as $candidate)
@@ -131,9 +128,6 @@
                                 </select> 
                               
                             </div>
-                        {{-- </form> --}}
-
-
                         </div>
                     </div>
                 </div>
@@ -160,20 +154,15 @@
                                     <h5 class="candidate-name">{{$candidate->candidate_name}}</h5>
 
                                 </div>
-
+                                @else
                             </div>
-                            @else
                             @endif
                             @endforeach
                             <!-- Candidate Selection code -->
                             <h6>Select Your <b>Candidate</b></h6>
-
-                            @include('partials.errors')
-
-                           @csrf
-                              
+            
                             <div class="candidate-select-box">
-                                 <select name="vice" class="candidate_select form-control" > 
+                                 <select name="candidate_id[1]" class="candidate_select form-control" > 
                                    
                                     <option value="">Select Candidate</option> 
 
@@ -186,8 +175,6 @@
                                 </select> 
                             
                             </div>
-                        {{-- </form> --}}
-
                         </div>
                     </div>
                 </div>
@@ -214,14 +201,13 @@
                                 </div>
 
                             </div>
-                            @else
                             @endif
                             @endforeach
                             <!-- Candidate Selection code -->
                             <h6>Select Your <b>Candidate</b></h6>
 
                             <div class="candidate-select-box">
-                                 <select id="candidate_select" name="candidate_id" class="candidate_select form-control" id="exampleFkormControlSelect2"> 
+                                 <select id="candidate_select" name="candidate_id[2]" class="candidate_select form-control" id="exampleFkormControlSelect2"> 
                                    
                                     <option value="">Select Candidate</option> 
 
@@ -232,10 +218,11 @@
                                     @endif
                                   @endforeach
                                 </select> 
-                        
+                                @error('candidate_id[]')
+                                    <div class="text-danger">{{$message}}</div>
+                                @enderror
                             </div>
-                        {{-- </form> --}}
-
+                       
                         </div>
                     </div>
                 </div>
@@ -262,7 +249,6 @@
                                 </div>
 
                             </div>
-                            @else
                             @endif
                             @endforeach
                            
@@ -270,7 +256,7 @@
                             <h6>Select Your <b>Candidate</b></h6>
                               
                             <div class="candidate-select-box">
-                                 <select id="candidate_select" name="candidate_id[]" class="candidate_select form-control" id="exampleFkormControlSelect2"> 
+                                 <select id="candidate_select" name="candidate_id[3]" class="candidate_select form-control" id="exampleFkormControlSelect2"> 
                                    
                                     <option value="">Select Candidate</option> 
 
@@ -283,8 +269,6 @@
                                 </select> 
                             
                             </div>
-                        
-
                         </div>
                     </div>
                 </div>
@@ -310,19 +294,14 @@
                                     <h5 class="candidate-name">{{$candidate->candidate_name}}</h5>
 
                                 </div>
-
                             </div>
                         
                             @endif
                             @endforeach
                             <!-- Candidate Selection code -->
                             <h6>Select Your <b>Candidate</b></h6>
-
-                            @include('partials.errors')
-                           @csrf
-                              
                             <div class="candidate-select-box">
-                                 <select id="candidate_select" name="candidate_id" class="candidate_select form-control" id="exampleFkormControlSelect2"> 
+                                 <select id="candidate_select" name="candidate_id[4]" class="candidate_select form-control" id="exampleFkormControlSelect2"> 
                                    
                                     <option value="">Select Candidate</option> 
 
@@ -335,8 +314,6 @@
                                 </select> 
                                
                             </div>
-                       
-
                         </div>
                     </div>
                 </div>
@@ -368,13 +345,8 @@
                             <!-- Candidate Selection code -->
                             <h6>Select Your <b>Candidate</b></h6>
 
-                            @include('partials.errors')
-
-                            {{-- <form action="{{route('castVote.store')}}" method="POST"> --}}
-                           @csrf
-                              
                             <div class="candidate-select-box">
-                                 <select id="candidate_select" name="candidate_id" class="candidate_select form-control" id="exampleFkormControlSelect2"> 
+                                 <select id="candidate_select" name="candidate_id[5]" class="candidate_select form-control" id="exampleFkormControlSelect2"> 
                                    
                                     <option value="">Select Candidate</option> 
 
@@ -413,14 +385,13 @@
                                 </div>
 
                             </div>
-                            @else
                             @endif
                             @endforeach
                             <!-- Candidate Selection code -->
                             <h6>Select Your <b>Candidate</b></h6>
                               
                             <div class="candidate-select-box">
-                                 <select id="candidate_select" name="candidate_id" class="candidate_select form-control" id="exampleFkormControlSelect2"> 
+                                 <select id="candidate_select" name="candidate_id[6]" class="candidate_select form-control" id="exampleFkormControlSelect2"> 
                                    
                                     <option value="">Select Candidate</option> 
 
@@ -456,18 +427,15 @@
                                     </div>
                                     <!-- candidate name -->
                                     <h5 class="candidate-name">{{$candidate->candidate_name}}</h5>
-
                                 </div>
-
                             </div>
-                            @else
                             @endif
                             @endforeach
                             <!-- Candidate Selection code -->
                             <h6>Select Your <b>Candidate</b></h6>
                               
                             <div class="candidate-select-box">
-                                 <select id="candidate_select" name="pro" class="candidate_select form-control" id="exampleFkormControlSelect2"> 
+                                 <select id="candidate_select" name="candidate_id[7]" class="candidate_select form-control" id="exampleFkormControlSelect2"> 
                                    
                                     <option value="">Select Candidate</option> 
 
@@ -480,21 +448,22 @@
                                 </select> 
                                 
                             </div>
-                      
                 </div>
-
-                @if($candidate->is_voted_by_auth_user())
-                <a href="#" class="btn btn-danger btn-sm"> Voted</a>    
-                 @else
-                 <button  type="submit" class="vote_btn btn btn-warning btn-sm">Vote</button>
-
-                 @endif
-                
-            </form> 
             </div>
+            @if($candidate->is_voted_by_auth_user())
+            <a href="#" class="btn btn-danger btn-sm"> Voted</a>    
+             @else
+             <button  type="submit" class="vote_btn btn btn-warning btn-sm">Vote</button>
+
+             @endif
+            </form> 
         </div>
 
     </section> 
+@else
+    <h1 class="text-center m-5"> No Candidate To Vote</h1>
+@endif
+
     <button onclick="topFunction()" id="myBtn" title="Go to top">
         Top
     </button>

@@ -8,6 +8,8 @@ use App\http\Requests\voters\CreateVotersRequest;
 use App\Http\Requests\Voters\UpdateVotersRequest;
 use App\candidate;
 use App\vote;
+use App\user;
+use App\category;
 use App\Http\Requests\Candidate\CreateCandidateRequest;
 
 class VotersController extends Controller
@@ -21,10 +23,12 @@ class VotersController extends Controller
      
     public function index()
     {
+        
         return view('voters.index')
-        ->with('Voters', voter::all())
+        ->with('users', user::all())
         ->with('candidates', candidate::all())
-        ->with('vote', vote::all());
+        ->with('categories', category::all())
+        ->with('votes', vote::all());
         
     }
 

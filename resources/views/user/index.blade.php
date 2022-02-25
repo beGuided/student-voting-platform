@@ -16,11 +16,10 @@
                         
                         <th>id</th>
                         <th>Name</th>
+                        <th>Email</th>
                         <th>Mat No</th>
-                        <th>sex</th>
                         <th>level</th>
                         <th>User Role</th>
-                        <th></th>
                         <th></th>
 
                     </thead>
@@ -30,11 +29,11 @@
                         <tr>
                             <td>{{$user->id}}</td>
                             <td>{{$user->name}}</td>
+                            <td>{{$user->email}}</td>
                             <td>{{$user->mat_number}}</td>
-                            <td>{{$user->gender}}</td>
                             <td>{{$user->level}}</td>
                             <td>{{$user->role}}</td>
-                            <td></td>
+                            <td></td>                          
                             {{-- <td>
                                 <a href="{{route('users.edit', $user->id)}}" class="btn btn-info btn-sm">Edit</a>
                             </td>

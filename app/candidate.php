@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 //use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Storage;
 use Auth;
+use App\User;
 
 class candidate extends Model
 {
@@ -14,6 +15,12 @@ class candidate extends Model
     protected $fillable = [
         'candidate_name', 'category_id', 'gender','candidate_level', 'image', 'vote_count'
     ];
+
+
+    public function votedBy(User $user)
+{
+    return $this->votes->contains('user_id', $user->id);
+}
 
     //delete candidate image
 public function deleteImage(){
@@ -54,10 +61,6 @@ public function is_voted_by_auth_user()
 
 }
 
-public function votedBy(User $user)
-{
-    return $this->votes->contains('user_id', $user->id);
-}
 
 
 
