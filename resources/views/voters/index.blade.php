@@ -1,99 +1,80 @@
 @extends('layouts.app')
+
+
+@section('css')
+{{-- link to font awesome --}}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+@endsection
+
 @section('content')
+
 
 <div class="container">
 
-    <div class="row my-3">
-        <div class="col-lg-3 col-md-6">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
+    @include('partials.dashboard')
+
+    
+{{-- 
                     <div class="row">
-                        <div class="col-xs-3">
-                            <i class="fa fa-file-text fa-5x"></i>
+                        <div class="col-lg-3 col-xs-6">
+                          <!-- small box -->
+                          <div class="small-box bg-aqua">
+                            <div class="inner">
+                            /////////////
+                
+                              <p>No. of Positions</p>
+                            </div>
+                            <div class="icon">
+                              <i class="fa fa-tasks"></i>
+                            </div>
+                            <a href="positions.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                          </div>
                         </div>
-                        <div class="col-xs-9 text-right">
-                      <div class='huge'>{{$candidates->count()}}</div>
-                            <div>candidates</div>
+                        <!-- ./col -->
+                        <div class="col-lg-3 col-xs-6">
+                          <!-- small box -->
+                          <div class="small-box bg-green">
+                            <div class="inner">
+                              \\\\\\\\\\\\\\\\\\\
+                              <p>No. of Candidates</p>
+                            </div>
+                            <div class="icon">
+                              <i class="fa fa-black-tie"></i>
+                            </div>
+                            <a href="candidates.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                          </div>
                         </div>
-                    </div>
-                </div>
-                <a href="{{route('candidates.index')}}">
-                    <div class="panel-footer">
-                        <span class="pull-left">View Details</span>
-                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="panel panel-green">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <i class="fa fa-comments fa-5x"></i>
+                        <!-- ./col -->
+                        <div class="col-lg-3 col-xs-6">
+                          <!-- small box -->
+                          <div class="small-box bg-yellow">
+                            <div class="inner">
+                             /////////////////
+                              <p>Total Voters</p>
+                            </div>
+                            <div class="icon">
+                              <i class="fa fa-users"></i>
+                            </div>
+                            <a href="voters.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                          </div>
                         </div>
-                        <div class="col-xs-9 text-right">
-                         <div class='huge'>{{$votes->count()}}</div>
-                          <div>votes</div>
+                        <!-- ./col -->
+                        <div class="col-lg-3 col-xs-6">
+                          <!-- small box -->
+                          <div class="small-box bg-red">
+                            <div class="inner">
+                            //////////////////
+                
+                              <p>Voters Voted</p>
+                            </div>
+                            <div class="icon">
+                              <i class="fa fa-edit"></i>
+                            </div>
+                            <a href="votes.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                          </div>
                         </div>
-                    </div>
-                </div>
-                <a href="{{route('votes.index')}}">
-                    <div class="panel-footer">
-                        <span class="pull-left">View Details</span>
-                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="panel panel-yellow">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <i class="fa fa-user fa-5x"></i>
-                        </div>
-                        <div class="col-xs-9 text-right">
-                        <div class='huge'>{{$users->count()}}</div>
-                            <div> Users</div>
-                        </div>
-                    </div>
-                </div>
-                <a href="{{route('platform-users.index')}}">
-                    <div class="panel-footer">
-                        <span class="pull-left">View Details</span>
-                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="panel panel-red">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <i class="fa fa-list fa-5x"></i>
-                        </div>
-                        <div class="col-xs-9 text-right">
-                            <div class='huge'>{{$categories->count()}}</div>
-                             <div>Categories</div>
-                        </div>
-                    </div>
-                </div>
-                <a href="{{route('categories.index')}}">
-                    <div class="panel-footer">
-                        <span class="pull-left">View Details</span>
-                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-                    <!-- /.row -->
+                        <!-- ./col -->
+                      </div> --}}
 
     <div class="row mt-5">
 

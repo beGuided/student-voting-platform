@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="css/live_stat_style.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="icon.css">
-    {{-- <link rel="stylesheet" href="css/style.css"> --}}
     <link rel="stylesheet" href="css/bootstrap.css">
 
      <!-- Googleicons CDN Link -->

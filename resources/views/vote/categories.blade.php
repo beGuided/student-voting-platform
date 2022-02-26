@@ -1,5 +1,5 @@
 @extends('layouts.vote')
-<meta http-equiv="refresh" content="5">
+<meta http-equiv="refresh" content="10">
 
 <link rel="stylesheet" href="../css/live_stat_style.css">
 <link rel="stylesheet" href="../css/style.css">
@@ -8,21 +8,24 @@
 <link rel="stylesheet" href="../css/bootstrap.css">
 
 @section('content')
-
+<body>
+   
 @include('partials.sidebar')
 
 
-        <section >
+        
+<section class="home-section">
+
             <div class="Elect-section item ">
                 <div class="container elect-row">
-                    <div class="elect-office">
+                    <div class="elect-office ">
                         <h5>OFFICE OF THE</h5>
                         <h2>{{$category->name}}</h2>
                     </div>
-                    <div class="row">
+                    <div class="row mt-3">
 
                         @foreach ($candidates as $candidate)
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                            
                             <div class=" container elect-info">
                                 <div class="elect-img-contain">
@@ -44,8 +47,8 @@
             <div class="space"></div>
         </section>
 
-     
-
+    
+   
 
     <script src="../js/scrollreveal.js"></script>
     <script src="../js/reveal.js"></script>
@@ -72,7 +75,7 @@
      
     </script>
     </script>
-
+ 
 
 </body>
 

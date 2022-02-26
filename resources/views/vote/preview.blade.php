@@ -40,9 +40,8 @@
             </div>
         </div>
 
-       
-     </section> 
-
+  
+</section>
 
     <script src="js/scrollreveal.js"></script>
     <script src="js/reveal.js"></script>

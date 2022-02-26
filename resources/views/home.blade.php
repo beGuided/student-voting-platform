@@ -16,7 +16,7 @@
 
                     <p class="text-center">You are logged in!</p>
 
-                
+                        
                 </div>
             </div>
         </div>
