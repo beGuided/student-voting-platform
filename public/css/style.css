@@ -534,8 +534,8 @@ p {
 
 .elect-img-contain {
     margin: auto;
-    /* width: 180px;
-    height: 200px; */
+    width: 190px;
+    max-height: 210px;
     overflow: hidden;
     border: solid 5px var(--gold);
     border-radius: 20px 0px 20px 0px;
@@ -629,7 +629,7 @@ p {
     }
     .Elect-section {
         height: auto;
-        padding: 30px;
+        padding: 10px;
     }
     .logo {
         width: 100px;

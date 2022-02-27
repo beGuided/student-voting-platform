@@ -16,8 +16,8 @@
         
 <section class="home-section">
 
-            <div class="Elect-section item ">
-                <div class="container elect-row">
+            <div class="Elect-section">
+                <div class="container-fluid elect-row">
                     <div class="elect-office ">
                         <h5>OFFICE OF THE</h5>
                         <h2>{{$category->name}}</h2>
@@ -25,9 +25,8 @@
                     <div class="row mt-3">
 
                         @foreach ($candidates as $candidate)
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                           
-                            <div class=" container elect-info">
+                        <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12">
+                            <div class="container elect-info">
                                 <div class="elect-img-contain">
                                     <img src="/storage/{{$candidate->image}}" alt="elect img" class="img-fluid elect-img">
                                 </div>
