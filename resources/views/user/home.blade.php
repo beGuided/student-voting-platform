@@ -16,7 +16,7 @@
                     @endif
 
                     <p class="text-center"><b> {{ Auth::user()->name }}</b> you are logged in!</p>
-
+                
                     <section style="background-color: rgb(6, 110, 40)">
 
                         <div data-id="all" class="live-page sec-1">

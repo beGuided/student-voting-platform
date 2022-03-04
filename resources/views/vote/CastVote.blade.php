@@ -47,7 +47,7 @@
 
                 <li>Make a <b>selection</b> before clicking the vote button</li>
                 <li>You <b>cannot</b> change vote after clicking the vote button</li>
-                <li>You can choose to  <b>participate or ignore voting any in any office</b> before leaving the voting area</li>
+                <li>You can choose to  <b>participate or ignore voting  in any office</b> before leaving the voting area</li>
                 <li>Once done with voting, click on the options bar and click <b>Submit Vote</b></li>
 
             </div>

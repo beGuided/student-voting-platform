@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\category;
-use App\http\Requests\Categories\CreateCategoryRequest;
-use App\http\Requests\Categories\UpdateCategoryRequest;
+use App\Http\Requests\Categories\CreateCategoryRequest;
+use App\Http\Requests\Categories\UpdateCategoryRequest;
 
 
 class CategoriesController extends Controller

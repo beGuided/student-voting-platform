@@ -2,10 +2,14 @@
 
 @section('content')
 
-<div class="d-flex justify-content-end mb-2">
+<div class="d-flex justify-content-end my-2">
 <a href="{{route('categories.create')}}" class="btn btn-success"> Add Category</a>
 
 </div>
+<div>
+  <p class="tetc-center"> click on this link to see the list of category to copy from <a href="https://docs.google.com/document/d/1V_EzjNPMMOCif4EJ7E_Pq7lEslx-xj4-WwAsLb1ivpo/edit?usp=sharing" class="text-danger" target="_blank"> click here</a></p>
+</div>
+
  <div class="card card-default">
     <div class="card-header"> Categories</div>
 
@@ -41,7 +45,7 @@
             </tbody>
         </table>
         @else 
-        <h4 class="text-center"> No candidate yet</h4>
+        <h4 class="text-center"> No Categories yet</h4>
         @endif
             <!-- Modal -->
     <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel">

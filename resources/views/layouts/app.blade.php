@@ -15,6 +15,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 
    
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -69,10 +70,6 @@
                                         @csrf
                                     </form>
                                 </div>
-                                <div>
-                                    
-                                </div>
-                                
                             </li>
                             <a class="dropdown-item" id="logout-button" href="#">
                                 {{ __('Logout') }}
@@ -103,20 +100,20 @@
                 <div class="row">
                     <div class="col-md-3">
                         <ul class="list-group">
-                            <li class="list-group-item">
+                            <li class="list-group-item mb-1">
                                 <a href="{{route('voters.index')}}">Dashboard</a>
                             </li>         
-                         <li class="list-group-item">
+                         <li class="list-group-item  mb-1">
                             <a href="{{route('candidates.index')}}">Candidate</a>
                         </li>    
-                        <li class="list-group-item">
+                        <li class="list-group-item mb-1">
                             <a href="{{route('categories.index')}}">Categories</a>
                         </li>
                         {{-- <li class="list-group-item">
                             <a href="{{route('voters.index')}}">Voters</a>
                         </li> --}}
 
-                        <li class="list-group-item">
+                        <li class="list-group-item mb-1">
                             <a href="{{route('platform-users.index')}}">Users</a>
                         </li>
                         </ul>
@@ -144,10 +141,15 @@
   
 
 @yield('scripts')
-<script src="{{ asset('js/app.js') }}" ></script>    
+<script src="{{ asset('js/app.js') }}" ></script>   
 
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+{{-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> --}}
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
 <script>
     $('#logout-button').on('click', function(e) {
     e.preventDefault();

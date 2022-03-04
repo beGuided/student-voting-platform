@@ -218,8 +218,9 @@ img {
 }
 
 .candidate-name {
-    margin: 0px 10px;
+    margin: 0px 5px;
     font-family: var(--bold-body-font);
+    color:#000000;
 }
 
 .candidate-photo {
@@ -234,7 +235,7 @@ img {
     /* box-shadow: 8px 9px 50px 0.1px rgba(138, 128, 98, 0.274); */
     background: #d4c3943d;
     margin: 10px 0px;
-    padding: 5px;
+    padding: 2px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -535,7 +536,7 @@ p {
 .elect-img-contain {
     margin: auto;
     width: 190px;
-    max-height: 210px;
+    height: 210px;
     overflow: hidden;
     border: solid 5px var(--gold);
     border-radius: 20px 0px 20px 0px;

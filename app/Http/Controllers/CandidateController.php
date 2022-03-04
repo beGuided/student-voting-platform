@@ -7,7 +7,7 @@ use App\category;
 use Illuminate\Http\Request;
 use App\vote;
 use Illuminate\Support\Facades\Storage;
-use App\http\Requests\Candidate\CreateCandidateRequest;
+use App\Http\Requests\Candidate\CreateCandidateRequest;
 use App\Http\Requests\Candidate\UpdateCandidateRequest;
 
 

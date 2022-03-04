@@ -1,17 +1,4 @@
-jQuery(document).ready(function() {
-        jQuery('.vote_btn').on('click', function() {
-            if ($(this).siblings(".candidate_select").val() == "") {
-                alert('You have not selected a candidate. Pleae select a candidate!')
-            } else if ($(this).siblings(".candidate_select").val() !== "") {
-                $(this).attr('disabled', true)
-                $(this).siblings('.candidate_select').attr('disabled', true)
-                $(this).text($(this).text().replace("Vote", "Voted"))
 
-            }
-
-        })
-
-    })
     //Get the button:
 mybutton = document.getElementById("myBtn");
 mynav = document.querySelector(".mynav");

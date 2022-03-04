@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\voter;
 use Illuminate\Http\Request;
-use App\http\Requests\voters\CreateVotersRequest;
+use App\Http\Requests\voters\CreateVotersRequest;
 use App\Http\Requests\Voters\UpdateVotersRequest;
 use App\candidate;
 use App\vote;

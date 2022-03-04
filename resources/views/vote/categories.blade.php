@@ -53,28 +53,8 @@
     <script src="../js/reveal.js"></script>
     <script src="../js/live_stat_script.js"></script>
    
-   <script>
-        function update() {
-  $.get("php/preview.php", function(data) {
-    $("#vote_count").html(data);
-    window.setTimeout(update, 5000);
-  });
-
   
 
-        }
-
-        <script>
-        $(document).ready(function(){
-             $("#vote_count").load("php/preview.php");
-            setInterval(function() {
-                $("#div_refresh").load("php/preview.php");
-            }, 1000);
-        });
-     
-    </script>
-    </script>
- 
 
 </body>
 

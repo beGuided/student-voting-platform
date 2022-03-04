@@ -18,7 +18,7 @@
                                         <img src="/storage/{{$candidate->image}}" alt="candidate 1">
                                     </div>
                                     <!-- candidate name -->
-                                    <h5 class="candidate-name">{{$candidate->candidate_name}}</h5>
+                                    <p class="candidate-name">{{$candidate->candidate_name}}</p>
 
                                 </div>
 
@@ -63,7 +63,7 @@
                                         <img src="/storage/{{$candidate->image}}" alt="candidate 1">
                                     </div>
                                     <!-- candidate name -->
-                                    <h5 class="candidate-name">{{$candidate->candidate_name}}</h5>
+                                    <p class="candidate-name">{{$candidate->candidate_name}}</p>
 
                                 </div>
                                
@@ -108,7 +108,7 @@
                                         <img src="/storage/{{$candidate->image}}" alt="candidate 1">
                                     </div>
                                     <!-- candidate name -->
-                                    <h5 class="candidate-name">{{$candidate->candidate_name}}</h5>
+                                    <p class="candidate-name">{{$candidate->candidate_name}}</p>
 
                                 </div>
 
@@ -154,7 +154,7 @@
                                         <img src="/storage/{{$candidate->image}}" alt="candidate 1">
                                     </div>
                                     <!-- candidate name -->
-                                    <h5 class="candidate-name">{{$candidate->candidate_name}}</h5>
+                                    <p class="candidate-name">{{$candidate->candidate_name}}</p>
 
                                 </div>
 
@@ -201,7 +201,7 @@
                                         <img src="/storage/{{$candidate->image}}" alt="candidate 1">
                                     </div>
                                     <!-- candidate name -->
-                                    <h5 class="candidate-name">{{$candidate->candidate_name}}</h5>
+                                    <p class="candidate-name">{{$candidate->candidate_name}}</p>
 
                                 </div>
                             </div>
@@ -244,7 +244,7 @@
                                         <img src="/storage/{{$candidate->image}}" alt="candidate 1">
                                     </div>
                                     <!-- candidate name -->
-                                    <h5 class="candidate-name">{{$candidate->candidate_name}}</h5>
+                                    <p class="candidate-name">{{$candidate->candidate_name}}</p>
 
                                 </div>
 
@@ -290,7 +290,7 @@
                                         <img src="/storage/{{$candidate->image}}" alt="candidate 1">
                                     </div>
                                     <!-- candidate name -->
-                                    <h5 class="candidate-name">{{$candidate->candidate_name}}</h5>
+                                    <p class="candidate-name">{{$candidate->candidate_name}}</p>
 
                                 </div>
 
@@ -337,7 +337,7 @@
                                         <img src="/storage/{{$candidate->image}}" alt="candidate 1">
                                     </div>
                                     <!-- candidate name -->
-                                    <h5 class="candidate-name">{{$candidate->candidate_name}}</h5>
+                                    <p class="candidate-name">{{$candidate->candidate_name}}</p>
                                 </div>
                             </div>
                             @endif
@@ -380,7 +380,7 @@
                                     <img src="/storage/{{$candidate->image}}" alt="candidate 1">
                                 </div>
                                 <!-- candidate name -->
-                                <h5 class="candidate-name">{{$candidate->candidate_name}}</h5>
+                                <p class="candidate-name">{{$candidate->candidate_name}}</p>
                             </div>
                         </div>
                         @endif
@@ -411,9 +411,9 @@
             <div class="container">
                 <div class="voting-box">
                     <!-- Election Offie -->
-                    <h3>The <b>Sports Dirctor</b></h3>
+                    <h3>The <b>Sports Director</b></h3>
                     @foreach ($candidates as $candidate)
-                    @if($candidate->category->name == 'Sports Dirctor') 
+                    @if($candidate->category->name == 'Sports Director') 
 
                     <div class="container">
                         <!-- candidate 1 -->
@@ -423,7 +423,7 @@
                                 <img src="/storage/{{$candidate->image}}" alt="candidate 1">
                             </div>
                             <!-- candidate name -->
-                            <h5 class="candidate-name">{{$candidate->candidate_name}}</h5>
+                            <p class="candidate-name">{{$candidate->candidate_name}}</p>
                         </div>
                     </div>
                     @endif
@@ -437,7 +437,7 @@
                             <option value="">Select Candidate</option> 
 
                             @foreach ($candidates as $candidate)
-                            @if($candidate->category->name == 'Sports Dirctor') 
+                            @if($candidate->category->name == 'Sports Director') 
 
                             <option value="{{$candidate->id}}"> {{$candidate->candidate_name}} </option>
                             @endif
@@ -467,7 +467,7 @@
                             <img src="/storage/{{$candidate->image}}" alt="candidate 1">
                         </div>
                         <!-- candidate name -->
-                        <h5 class="candidate-name">{{$candidate->candidate_name}}</h5>
+                        <p class="candidate-name">{{$candidate->candidate_name}}</p>
                     </div>
                 </div>
                 @endif
@@ -511,7 +511,7 @@
                         <img src="/storage/{{$candidate->image}}" alt="candidate 1">
                     </div>
                     <!-- candidate name -->
-                    <h5 class="candidate-name">{{$candidate->candidate_name}}</h5>
+                    <p class="candidate-name">{{$candidate->candidate_name}}</p>
                 </div>
             </div>
             @endif
@@ -537,12 +537,150 @@
             </div>
             </div>
 
-            <div class="my-5">
-                @if($candidate->is_voted_by_auth_user())
-                <a href="#" class="btn btn-danger btn-sm"> Voted</a>    
-                 @else
-                 <button  type="submit" class="vote_btn btn btn-success btn-lg m-4">Submit Vote</button>
-                 @endif
-            </div>
+        
+            
+             <!-- next candidate -->
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="container">
+            <div class="voting-box">
+                <!-- Election Offie -->
+                <h3> <b>DSSC Member</b></h3>
+                @foreach ($candidates as $candidate)
+                @if($candidate->category->name == 'DSSC Member') 
+    
+                <div class="container">
+                    <!-- candidate 1 -->
+                    <div class="candidate">     
+                        <!-- candidate image -->
+                        <div class="candidate-photo">
+                            <img src="/storage/{{$candidate->image}}" alt="candidate 1">
+                        </div>
+                        <!-- candidate name -->
+                        <p class="candidate-name">{{$candidate->candidate_name}}</p>
+                    </div>
+                </div>
+                @endif
+                @endforeach
+                <!-- Candidate Selection code -->
+                <h6>Select Your <b>Candidate</b></h6>
+                  
+                <div class="candidate-select-box">
+                     <select id="candidate_select" name="candidate_id[12]" class="candidate_select form-control" id="exampleFkormControlSelect2"> 
+                       
+                        <option value="">Select Candidate</option> 
+    
+                        @foreach ($candidates as $candidate)
+                        @if($candidate->category->name == 'DSSC Member') 
+    
+                        <option value="{{$candidate->id}}"> {{$candidate->candidate_name}} </option>
+                        @endif
+                      @endforeach
+                    </select> 
+                    
+                </div>
+                  </div>
+                </div>
+                </div>
+    
+             
            
+                
+             <!-- next candidate -->
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="container">
+            <div class="voting-box">
+                <!-- Election Offie -->
+                <h3><b>Deputy Chairman DSDC</b></h3>
+                @foreach ($candidates as $candidate)
+                @if($candidate->category->name == '>Deputy Chairman DSDC') 
+    
+                <div class="container">
+                    <!-- candidate 1 -->
+                    <div class="candidate">     
+                        <!-- candidate image -->
+                        <div class="candidate-photo">
+                            <img src="/storage/{{$candidate->image}}" alt="candidate 1">
+                        </div>
+                        <!-- candidate name -->
+                        <p class="candidate-name">{{$candidate->candidate_name}}</p>
+                    </div>
+                </div>
+                @endif
+                @endforeach
+                <!-- Candidate Selection code -->
+                <h6>Select Your <b>Candidate</b></h6>
+                  
+                <div class="candidate-select-box">
+                     <select id="candidate_select" name="candidate_id[13]" class="candidate_select form-control" id="exampleFkormControlSelect2"> 
+                       
+                        <option value="">Select Candidate</option> 
+    
+                        @foreach ($candidates as $candidate)
+                        @if($candidate->category->name == '>Deputy Chairman DSDC') 
+    
+                        <option value="{{$candidate->id}}"> {{$candidate->candidate_name}} </option>
+                        @endif
+                      @endforeach
+                    </select> 
+                    
+                </div>
+                  </div>
+                </div>
+                </div>
+
+
+                    <!-- next candidate -->
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="container">
+            <div class="voting-box">
+                <!-- Election Offie -->
+                <h3> <b>P.R.O DSEC</b></h3>
+                @foreach ($candidates as $candidate)
+                @if($candidate->category->name == 'P.R.O DSEC') 
+    
+                <div class="container">
+                    <!-- candidate 1 -->
+                    <div class="candidate">     
+                        <!-- candidate image -->
+                        <div class="candidate-photo">
+                            <img src="/storage/{{$candidate->image}}" alt="candidate 1">
+                        </div>
+                        <!-- candidate name -->
+                        <p class="candidate-name">{{$candidate->candidate_name}}</p>
+                    </div>
+                </div>
+                @endif
+                @endforeach
+                <!-- Candidate Selection code -->
+                <h6>Select Your <b>Candidate</b></h6>
+                  
+                <div class="candidate-select-box">
+                     <select id="candidate_select" name="candidate_id[14]" class="candidate_select form-control" id="exampleFkormControlSelect2"> 
+                       
+                        <option value="">Select Candidate</option> 
+    
+                        @foreach ($candidates as $candidate)
+                        @if($candidate->category->name == 'P.R.O DSEC') 
+    
+                        <option value="{{$candidate->id}}"> {{$candidate->candidate_name}} </option>
+                        @endif
+                      @endforeach
+                    </select> 
+                    
+                </div>
+                  </div>
+                </div>
+                </div>
+
+       
+    
+                <div class="my-5">
+                    @if($candidate->is_voted_by_auth_user())
+                    <a href="#" class="btn btn-danger btn-sm"> Voted</a>    
+                     @else
+                     <button  type="submit" class="vote_btn btn btn-success btn-lg m-4">Submit Vote</button>
+                     @endif
+                </div>
+           
+                
      </div>

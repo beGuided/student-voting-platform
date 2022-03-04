@@ -8,6 +8,10 @@
     <div class="card-body">
         @include('partials.errors')
 
+        <div class="m-4">
+            <p class="tetc-center"> click on this link to see the list of category to copy from <a href="https://docs.google.com/document/d/1V_EzjNPMMOCif4EJ7E_Pq7lEslx-xj4-WwAsLb1ivpo/edit?usp=sharing" class="text-danger" target="_blank"> click here</a></p>
+          </div>
+
         <form action=" {{isset ($category) ? route('categories.update', $category->id): route('categories.store')}} "method="POST">
             @csrf
 
