@@ -77,8 +77,8 @@
 
 
 <div class="form-group">
-  <label for="published_at"> published at</label>
-<input type="text" class="form-control" name="published_at" id='published_at'>
+  {{-- <label for="published_at"> published at</label>
+<input type="text" class="form-control" name="published_at" id='published_at'> --}}
 @if(isset($candidate))
     
 <div class="form-group">
@@ -87,6 +87,7 @@
 @endif
 
 </div>
+
    <div class="form-group">
     <label for="image"> Candidate Image</label>
 <input type="file" class="form-control" name="image" id='title'>

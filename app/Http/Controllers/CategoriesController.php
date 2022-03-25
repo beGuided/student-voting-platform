@@ -105,10 +105,18 @@ class CategoriesController extends Controller
      */
     public function destroy(Category $category)
     {
+       if($category->candidates->count() > 0){
+
+        session()->flash('error', 'You need to delete all candidate associated with this category ');
+        return redirect(route('categories.index'));
+
+       }
+       else{
         $category->delete();
 
         session()->flash('success', 'Category deleted successfully.');
         return redirect(route('categories.index'));
+       }
     }
 
 

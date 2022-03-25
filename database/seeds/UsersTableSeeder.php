@@ -22,7 +22,15 @@ class UsersTableSeeder extends Seeder
             'mat_number'=>'123456',
             'password' => Hash::make('123456')
             ]);
-        }
+        };
+
+        $user= new User([                                    
+         'name' => 'john Doe',
+        'email' =>'EDU123456@fcetmail.com',
+        'role' =>'user',
+        'mat_number'=> 'EDU123456',
+        'password' => Hash::make('EDU123456')     
+                     ]);  $user->save() ;
 
         
 

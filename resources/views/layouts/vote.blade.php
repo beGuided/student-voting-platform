@@ -50,7 +50,7 @@
     <script src="js/bootstrap.min.js"></script>
     
     <script src="js/script.js"></script>
-    {{-- <script src="js/vote.js"></script> --}}
+    <script src="js/vote.js"></script>
     <script src="js/reveal.js"></script>
     <script src="js/live_stat_script.js"></script>
 

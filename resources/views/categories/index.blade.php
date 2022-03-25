@@ -6,9 +6,9 @@
 <a href="{{route('categories.create')}}" class="btn btn-success"> Add Category</a>
 
 </div>
-<div>
+{{-- <div>
   <p class="tetc-center"> click on this link to see the list of category to copy from <a href="https://docs.google.com/document/d/1V_EzjNPMMOCif4EJ7E_Pq7lEslx-xj4-WwAsLb1ivpo/edit?usp=sharing" class="text-danger" target="_blank"> click here</a></p>
-</div>
+</div> --}}
 
  <div class="card card-default">
     <div class="card-header"> Categories</div>
@@ -32,9 +32,9 @@
                       {{$category->candidates->count()}}
                     </td>
                     <td>
-                         <a href="{{route('categories.edit', $category->id)}}" class="btn btn-info btn-sm" >
+                         {{-- <a href="{{route('categories.edit', $category->id)}}" class="btn btn-info btn-sm" >
                             Edit
-                        </a>
+                        </a> --}}
 
                         <button class="btn btn-danger btn-sm" onclick="handleDelete({{$category->id}})"> Delete</button>
                     </td>

@@ -18,7 +18,7 @@ class verifyCategoriesCount
     {
         if(Category::all()->count() == 0){
             
-            session()->flash('error', 'You need to add category to be able to add a candidate vote');
+            session()->flash('error', 'You need to add categories to be able to add candidates and cast or view votes');
           
             return redirect(route('categories.create'));
         }

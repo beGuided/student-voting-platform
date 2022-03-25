@@ -96,9 +96,9 @@
                     <div class="container">
                         <div class="voting-box">
                             <!-- Election Offie -->
-                            <h3>Secretary <b>General</b></h3>
+                            <h3>General <b>Secretary</b></h3>
                             @foreach ($candidates as $candidate)
-                            @if($candidate->category->name == 'Secretary General') 
+                            @if($candidate->category->name == ' General Secretary') 
 
                             <div class="container">
                                 <!-- candidate 1 -->
@@ -124,7 +124,7 @@
                                     <option value="">Select Candidate</option> 
 
                                     @foreach ($candidates as $candidate)
-                                    @if($candidate->category->name == 'Secretary General') 
+                                    @if($candidate->category->name == 'General Secretary') 
 
                                     <option value="{{$candidate->id}}"> {{$candidate->candidate_name}} </option>
                                     @endif
@@ -142,9 +142,9 @@
                     <div class="container">
                         <div class="voting-box">
                             <!-- Election Offie -->
-                            <h3>Asst. Secretary <b>General</b></h3>
+                            <h3>Asst. General <b>Secretary</b></h3>
                             @foreach ($candidates as $candidate)
-                            @if($candidate->category->name == 'Asst. Secretary General') 
+                            @if($candidate->category->name == 'Asst. General Secretary') 
 
                             <div class="container">
                                 <!-- candidate 1 -->
@@ -171,7 +171,7 @@
                                     <option value="">Select Candidate</option> 
 
                                     @foreach ($candidates as $candidate)
-                                    @if($candidate->category->name == 'Asst. Secretary General') 
+                                    @if($candidate->category->name == 'Asst. General Secretary') 
 
                                     <option value="{{$candidate->id}}"> {{$candidate->candidate_name}} </option>
                                     @endif
@@ -544,9 +544,9 @@
             <div class="container">
             <div class="voting-box">
                 <!-- Election Offie -->
-                <h3> <b>DSSC Member</b></h3>
+                <h3> <b>DSDC Chairman</b></h3>
                 @foreach ($candidates as $candidate)
-                @if($candidate->category->name == 'DSSC Member') 
+                @if($candidate->category->name == 'DSDC Chairman') 
     
                 <div class="container">
                     <!-- candidate 1 -->
@@ -570,7 +570,7 @@
                         <option value="">Select Candidate</option> 
     
                         @foreach ($candidates as $candidate)
-                        @if($candidate->category->name == 'DSSC Member') 
+                        @if($candidate->category->name == 'DSDC Chairman') 
     
                         <option value="{{$candidate->id}}"> {{$candidate->candidate_name}} </option>
                         @endif
@@ -634,9 +634,9 @@
             <div class="container">
             <div class="voting-box">
                 <!-- Election Offie -->
-                <h3> <b>P.R.O DSEC</b></h3>
+                <h3> <b>P.R.O DSDC</b></h3>
                 @foreach ($candidates as $candidate)
-                @if($candidate->category->name == 'P.R.O DSEC') 
+                @if($candidate->category->name == 'P.R.O DSDC') 
     
                 <div class="container">
                     <!-- candidate 1 -->
@@ -660,7 +660,7 @@
                         <option value="">Select Candidate</option> 
     
                         @foreach ($candidates as $candidate)
-                        @if($candidate->category->name == 'P.R.O DSEC') 
+                        @if($candidate->category->name == 'P.R.O DSDC') 
     
                         <option value="{{$candidate->id}}"> {{$candidate->candidate_name}} </option>
                         @endif

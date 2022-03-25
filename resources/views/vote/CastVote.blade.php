@@ -45,10 +45,10 @@
             </div>
             <div class="instruction ">
 
-                <li>Make a <b>selection</b> before clicking the vote button</li>
-                <li>You <b>cannot</b> change vote after clicking the vote button</li>
-                <li>You can choose to  <b>participate or ignore voting  in any office</b> before leaving the voting area</li>
-                <li>Once done with voting, click on the options bar and click <b>Submit Vote</b></li>
+                <li>Make all <b>selection</b> before clicking the Submit Vote button</li>
+                <li>You can choose to  <b>participate or ignore voting in any office</b> before leaving the voting area</li>
+                <li>Once done with all selections, click <b>Submit Vote</b></li>
+                <li>You <b>cannot</b> change vote or access voting area after clicking the Submit Vote button</li>
 
             </div>
         </div>

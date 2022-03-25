@@ -62,11 +62,10 @@
                     <h5>Vote from</h5>
                     <h1>anywhere!</h1>
                     <h6>Join the voting process after completing these steps</h6>
-                    <h4><b>STEP 1:</b> Voter Must Be A Financial Member</h4>
-                    <h4><b>STEP 2:</b> Get Verified</h4>
-                    <h4><b>STEP 3:</b> Login With Matric Number</h4>
-                    <h4><b>STEP 4:</b> Cast Your Vote</h4>
-                    <h4><b>STEP 5:</b> Preview Election In Real Time</h4>
+                    <h4><b>STEP 1:</b> Voter Must Be A Verified Financial Member</h4>
+                    <h4><b>STEP 2:</b> Login With your Matric Number And Customize Email</h4>
+                    <h4><b>STEP 3:</b> Cast Your Vote</h4>
+                    <h4><b>STEP 4:</b> Preview Election Result In Real Time</h4>
                 </div>
                 <div class="container app-screen-container">
                     <img src="assets/images/election app screen.png" alt="app screen" class=" app-screen img-fluid">
