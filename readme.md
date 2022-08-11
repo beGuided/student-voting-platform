@@ -1,7 +1,7 @@
-#Voting System for FCE
+# Voting System for FCE
 
 ##################################
-##This is he official web voting platform for THE FEDERAL COLLEDE OF EDUCATION (TECHNICAL) AKOKA
+## This is he official web voting platform for THE FEDERAL COLLEDE OF EDUCATION (TECHNICAL) AKOKA
 ########################################################################
 
 ##FEATURES
@@ -14,4 +14,4 @@ NB:
 
 ### ACCESS TO ADMIN LOGIN
 
-###TOOLS USED AND API
+### TOOLS USED AND API
