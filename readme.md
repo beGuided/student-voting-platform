@@ -4,7 +4,7 @@
 ## This is he official web voting platform for THE FEDERAL COLLEDE OF EDUCATION (TECHNICAL) AKOKA
 ########################################################################
 
-##FEATURES
+## PLATFORM FEATURES:
 
 
 
