@@ -13,5 +13,9 @@
 NB: 
 
 ### ACCESS TO ADMIN LOGIN
+the website domain name/admin
+the defult admin credentials is
+* username: admin@email.com
+* password: 123456
 
 ### TOOLS USED AND API
